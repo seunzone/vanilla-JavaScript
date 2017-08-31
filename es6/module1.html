@@ -10,8 +10,67 @@
 
 <script>
     //Declaring Strings
-    const name = "Hello ES6";
-    console.log(name);
+    // const name = "Hello ES6";
+    // console.log(name);
+
+    //Template Literals
+    let name = "Seun";
+    let another = `This is a really cool stuff Mr ${name}`;
+    console.log(another);
+
+    //Template literals for Arithmetic Opertaions
+    let number1 = 20;
+    let number2 = 30;
+    let total = `The total of both figure is ${number1 + number2}`;
+    console.log(total);
+
+
+    //SPREAD OPERATOR
+    let blueHouse =["Jonh", "Sam", "Kola"];
+    let redHouse = ["Jane", "Perry", "Anita"];
+    let allHOuse = ["Huse", "Fuse", "Tuse", ...blueHouse, ...redHouse];
+    console.log(allHOuse);
+
+
+    //DEFAULT PARAMETERS
+    function cars(car1="BMW",car2="Innoson"){
+        console.log(car1,car2);
+    }
+    cars("ferrari","porshe")
+
+    //WITH ES6, YOU CAN SAVE A FUNCTION INTO A VARIABLE
+    let add = function (num1,num2){
+        return num1 + num2;
+    } 
+
+    console.log(add(23,37));
+    // can also be wrritten as
+    let addition = (number1,number2) => number1 + number2;
+    console.log(addition);
+    console.log(addition(30,30));
+
+    //SHORTHAND PROPERTIES
+    //NEW WAY
+    const person = {}
+    let oruko = person.name = "Seun";
+    person.action =  () => {
+       console.log(oruko + " is running"); 
+    }
+    person.action();
+
+    //the THIS KEYWOrd
+    const sombori = {
+        name: "Seun",
+        moves: ['coding', 'eating', 'sleeping'],
+        displayState (){
+            // let woo = this;
+            this.moves.forEach(m=>{
+                let strr = this.name + " is " + m + ", cool";
+                console.log(strr); 
+            });
+        }
+    }
+    sombori.displayState();
 
 </script>
 
