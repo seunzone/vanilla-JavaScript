@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Getting Started with ES6</title>
+    </head>
+
+   <body>
+       
+   </body>
+
+<script>
+  //Declaring es6 Classes
+  class Person {
+      constructor (name, title){
+          this.name = name;
+          this.title = title; 
+      }
+      displayData(){
+          console.log(`${this.name} is a really cool ${this.title}`);
+      }
+  }
+  let object = new Person("Seun Daramola", "Computer Instructor");
+  object.displayData();
+
+</script>
+
+</html>
