@@ -65,11 +65,13 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 //Introducing ES6
-const name = "Seun";
-
+var name = "Seun";
 
 /***/ })
 /******/ ]);
