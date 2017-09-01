@@ -19,8 +19,17 @@
           console.log(`${this.name} is a really cool ${this.title}`);
       }
   }
-  let object = new Person("Seun Daramola", "Computer Instructor");
-  object.displayData();
+    //   let object = new Person("Seun Daramola", "Computer Instructor");
+    //   object.displayData();
+
+  //Class Inheritance Introduced with es6
+  class Alien extends Person {
+      constructor(){
+          super ("Seun Daramola", "guy");
+      }
+  }
+  let alien = new Alien();
+  alien.displayData();
 
 </script>
 
