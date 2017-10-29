@@ -1,3 +1,10 @@
+// The map function creates a new array by calling a specific function 
+// on each element in an initial array. For example, 
+// if you have an array of strings in the form "MM-DD" that 
+// 	represent birthdays and you want to convert each element to be in a different format, 
+// you could use the map function to create a new array with new elements. 
+
+
 //A simple function that changes the date format from '/' to '-'
 
 const date1 = ["01/12", "02/09", "03/10"]
